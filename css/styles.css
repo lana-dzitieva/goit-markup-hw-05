@@ -408,7 +408,6 @@ body {
 
 .footer-container {
   display: flex;
-  gap: 80px;
   align-items: baseline;
 }
 
@@ -520,12 +519,16 @@ body {
 
   background-color: #fcfcfc;
   border-radius: 4px;
+  box-shadow:
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .footer-subscribe {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  margin-left: auto;
 }
 
 .footer-subscribe-form {
@@ -544,10 +547,19 @@ body {
   border-radius: 4px;
 
   color: #ffffff;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-subscribe-form input::placeholder {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-subscribe-form input:focus {
+  border-color: #4d5ae5;
 }
 
 .footer-subscribe-form-button {
@@ -556,7 +568,7 @@ body {
   justify-content: center;
   gap: 16px;
 
-  min-width: 165px;
+  min-width: 169px;
   height: 40px;
 
   background-color: #4d5ae5;
@@ -565,6 +577,8 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  letter-spacing: 0.04em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-subscribe-icon {
@@ -596,13 +610,13 @@ body {
 .modal-form {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
 }
 
 .modal-label {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
 }
 
 .modal-label-text {
@@ -642,6 +656,12 @@ body {
   border-radius: 4px;
 
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-submit-btn:hover,
+.modal-submit-btn:focus {
+  background-color: #404bbf;
 }
 
 .modal-close-btn {
@@ -661,6 +681,7 @@ body {
   background-color: #e7e9fc;
   border: 1px solid rgba(46, 47, 66, 0.1);
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
@@ -677,6 +698,7 @@ body {
   width: 8px;
   height: 8px;
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form input:focus,
@@ -749,6 +771,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-top: 0;
 
   margin-top: 16px;
 
