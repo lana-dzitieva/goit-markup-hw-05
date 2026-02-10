@@ -717,7 +717,7 @@ body {
 
 .modal-input-icon {
   position: absolute;
-  left: 12px;
+  left: 16px;
   top: 50%;
 
   transform: translateY(-50%);
@@ -751,7 +751,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  margin-right: 0;
+  flex-shrink: 0;
   transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -760,6 +760,7 @@ body {
 .modal-checkbox-icon {
   fill: #ffffff;
   opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox-input:checked + .modal-checkbox-custom {
@@ -776,8 +777,6 @@ body {
   align-items: center;
   gap: 8px;
   margin-top: 0;
-
-  margin-top: 16px;
 
   font-size: 12px;
   line-height: 1.17;
