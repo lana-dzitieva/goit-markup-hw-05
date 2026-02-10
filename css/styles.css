@@ -531,6 +531,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: auto;
+  gap: 16px;
 }
 
 .footer-subscribe-form {
@@ -589,7 +590,7 @@ body {
 }
 
 .footer-subscribe-title {
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
   font-weight: 500;
@@ -627,6 +628,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
 }
 
 .modal-form input,
@@ -648,7 +651,7 @@ body {
 }
 
 .modal-submit-btn {
-  margin-top: 16px;
+  margin-top: 24px;
   align-self: center;
 
   min-width: 169px;
@@ -778,10 +781,10 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-top: 8px;
+  margin-top: 16px;
   letter-spacing: 0.04em;
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 1.33;
   color: #8e8f99;
 }
 
